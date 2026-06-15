@@ -1,0 +1,92 @@
+ body {
+     margin: 0;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     height: 100vh;
+     background: #f0f0f0;
+     font-family: sans-serif;
+ }
+
+ #status {
+     margin-bottom: 10px;
+     font-size: 18px;
+ }
+
+ #main-container {
+     display: flex;
+     flex-direction: row;
+     align-items: flex-start;
+     gap: 10px;
+ }
+
+ #toolbar {
+     display: flex;
+     flex-direction: column;
+     gap: 8px;
+ }
+
+ #toolbar button {
+     width: 48px;
+     height: 48px;
+     padding: 0;
+     font-size: 24px;
+     cursor: pointer;
+     border: 1px solid #888;
+     background: #fff;
+     border-radius: 4px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ #toolbar button.active {
+     background: #4a90d9;
+     color: #fff;
+     border-color: #2a6cb8;
+ }
+
+ canvas {
+     border: 1px solid #333;
+     background: white;
+     cursor: crosshair;
+ }
+
+ #property-panel {
+     width: 200px;
+     border: 1px solid #888;
+     background: #fff;
+     padding: 8px;
+     overflow-y: auto;
+     max-height: 600px;
+     font-size: 14px;
+ }
+
+ #property-panel .prop-row {
+     display: flex;
+     align-items: center;
+     margin-bottom: 4px;
+ }
+
+ #property-panel .prop-label {
+     width: 80px;
+     flex-shrink: 0;
+     font-weight: bold;
+ }
+
+ #property-panel .prop-input {
+     flex: 1;
+     width: 100%;
+     box-sizing: border-box;
+ }
+
+ #property-panel .prop-value {
+     flex: 1;
+     color: #555;
+ }
+
+ #property-panel .prop-empty {
+     color: #999;
+     font-style: italic;
+ }
